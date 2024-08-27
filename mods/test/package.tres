@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ModData" load_steps=2 format=3 uid="uid://cc0u4projpcqq"]
+
+[ext_resource type="Script" path="res://src/ModData.gd" id="1_sv16n"]
+
+[resource]
+script = ExtResource("1_sv16n")
+name = "Test Mod"
+author = "Dyrius"
+description = "first mod ever made"
+main = "index.gd"

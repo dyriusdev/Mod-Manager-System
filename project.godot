@@ -13,3 +13,7 @@ config_version=5
 config/name="ModManagerSystem"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+ModManager="*res://src/ModManager.gd"
