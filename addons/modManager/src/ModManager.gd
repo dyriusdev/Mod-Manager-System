@@ -16,9 +16,9 @@ func LoadMods() -> void:
             if file == "package.tres":
                 var data : ModData = ResourceLoader.load("%s/package.tres" % path)
                 if is_instance_valid(data):
-                    mods[data.name] = data
+                    mods[data.modId] = data
                     var modRoot : ModRoot = load("%s/%s" % [path, data.main]).new()
-                    modRoot.name = data.name
+                    modRoot.name = data.modId
                     add_child(modRoot)
     ModEvents.allModsLoaded.emit()
     pass
@@ -41,11 +41,11 @@ func GetListFromDirectory(path : String) -> Array[String]:
     return files
 
 # Try to find dependencies of the mod
-func FindDependencies(modName : String) -> bool:
-    var checking : ModData = mods.get(modName)
+func FindDependencies(modId : String) -> bool:
+    var checking : ModData = mods.get(modId)
     # If size equals to 0 so the status is true because dont have any dependencies
     var status : bool = checking.dependencies.size() == 0
     for dependency in checking.dependencies:
         var dependent : ModData = mods.get(dependency)
-        status = is_instance_valid(dependent)
+        status = is_instance_valid(dependent) and dependent.valid
     return status

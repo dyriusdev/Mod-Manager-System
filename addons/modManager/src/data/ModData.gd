@@ -1,5 +1,6 @@
 class_name ModData extends Resource
 
+@export var modId : String = ""
 @export var name : String = ""
 @export var author : String = ""
 @export_multiline var description : String = ""

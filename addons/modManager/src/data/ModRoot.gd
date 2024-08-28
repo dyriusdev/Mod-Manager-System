@@ -1,4 +1,3 @@
-@tool
 class_name ModRoot extends Node
 
 var valid : bool = true
@@ -7,6 +6,7 @@ func _ready() -> void:
 	ModEvents.allModsLoaded.connect(CheckDependencies)
 	pass
 
+# Look for dependencies
 func CheckDependencies() -> void:
 	valid = ModManager.FindDependencies(name)
 	if valid:
