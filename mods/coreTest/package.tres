@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ModData" load_steps=2 format=3 uid="uid://bggk8v8x5d4w7"]
+
+[ext_resource type="Script" path="res://src/ModData.gd" id="1_s4lpe"]
+
+[resource]
+script = ExtResource("1_s4lpe")
+name = "LibTest"
+author = "Dyrius"
+description = "Mod core test for dependency"
+main = "index.gd"
+dependencies = Array[String]([])
