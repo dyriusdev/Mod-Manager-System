@@ -4,8 +4,9 @@
 
 [resource]
 script = ExtResource("1_b4r0j")
+modId = "test"
 name = "Test Mod"
 author = "Dyrius"
 description = "first mod ever made"
 main = "index.gd"
-dependencies = Array[String](["LibTest"])
+dependencies = Array[String](["libtest"])

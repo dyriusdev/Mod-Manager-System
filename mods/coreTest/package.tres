@@ -4,6 +4,7 @@
 
 [resource]
 script = ExtResource("1_s4lpe")
+modId = "libtest"
 name = "LibTest"
 author = "Dyrius"
 description = "Mod core test for dependency"

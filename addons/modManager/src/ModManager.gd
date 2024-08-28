@@ -46,6 +46,6 @@ func FindDependencies(modId : String) -> bool:
     # If size equals to 0 so the status is true because dont have any dependencies
     var status : bool = checking.dependencies.size() == 0
     for dependency in checking.dependencies:
-        var dependent : ModData = mods.get(dependency)
+        var dependent : ModRoot = get_node(dependency)
         status = is_instance_valid(dependent) and dependent.valid
     return status
