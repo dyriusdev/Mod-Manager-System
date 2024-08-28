@@ -35,4 +35,4 @@ and there is a step-by-step guide todo this:
     </tr>
 </table>
 
-This project has also a lib/core demo and a simple mod demo in the folder ![a link](https://github.com/dyriusdev/Mod-Manager-System/tree/main/mods)
+This project has also a lib/core demo and a simple mod demo in the ![folder](https://github.com/dyriusdev/Mod-Manager-System/tree/main/mods)
