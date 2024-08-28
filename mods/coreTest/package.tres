@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="ModData" load_steps=2 format=3 uid="uid://bggk8v8x5d4w7"]
 
-[ext_resource type="Script" path="res://src/ModData.gd" id="1_s4lpe"]
+[ext_resource type="Script" path="res://addons/modManager/src/data/ModData.gd" id="1_s4lpe"]
 
 [resource]
 script = ExtResource("1_s4lpe")

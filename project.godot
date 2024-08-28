@@ -16,4 +16,9 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-ModManager="*res://src/ModManager.gd"
+ModEvents="*res://addons/modManager/src/ModEvents.gd"
+ModManager="*res://addons/modManager/src/ModManager.gd"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/modManager/plugin.cfg")
