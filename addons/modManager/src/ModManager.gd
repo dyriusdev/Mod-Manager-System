@@ -1,6 +1,6 @@
 extends Node
 
-const MOD_PATH : String = "res://mods/"
+const ModPath : String = "res://mods/"
 
 var mods : Dictionary = {}
 
@@ -10,8 +10,8 @@ func _ready() -> void:
 
 # Load all mods on the MOD_PATH directory and call they entry points
 func LoadMods() -> void:
-    for dir in GetListFromDirectory(MOD_PATH):
-        var path : String = MOD_PATH + dir
+    for dir in GetListFromDirectory(ModPath):
+        var path : String = ModPath + dir
         for file in GetListFromDirectory(path):
             if file == "package.tres":
                 var data : ModData = ResourceLoader.load("%s/package.tres" % path)
