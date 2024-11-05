@@ -11,6 +11,8 @@ func CheckDependencies() -> void:
 	valid = ModManager.FindDependencies(name)
 	if valid:
 		Load()
+	else:
+		ModEvents.loadFailed.emit() # TODO
 	pass
 
 
